@@ -1,0 +1,45 @@
+{
+  "exp_name": "fmgan_experiment6",
+  "agent": "FMGAN_Model",
+  "phase": "testing",
+  "load_chkpt": true,
+
+  "cuda": true,
+  "gpu_device": 0,
+  "seed": 1,
+
+  "noise_dim": 200,
+
+  "volume_shape": [240, 240, 48], 
+  "patch_shape": [16, 16, 16],
+  "extraction_step": [8, 8, 8],
+  "relu_slope": 0.2,
+
+  "batch_size": 16,
+  "num_classes": 4,
+  "num_modalities": 2,
+  "number_images_training": 4,
+  "number_unlab_images_training": 4,
+  "num_images_testing": 15,
+  "num_images_validating": 2,
+
+  "learning_rate_D": 0.0001,
+  "learning_rate_G": 0.0001,
+  "weight_decay": 0,
+  "beta1D": 0.5,
+  "beta1G": 0.5,
+  "beta2D": 0.999,
+  "beta2G": 0.999,
+
+  "epochs": 160,
+  "validation_every_epoch": 1,
+  "checkpoint_file": "checkpoint.pth.tar",
+  "checkpoint_dir": "./checkpoints/",
+
+  "data_loader_workers": 0,
+  "pin_memory": false,
+  "async_loading": true,
+
+  "data_mode": "imgs",
+  "data_directory": "/content/drive/MyDrive/Colab Notebooks/Bakalauras/bazinis_GBT/pytorch/data/dataverse_files"
+}

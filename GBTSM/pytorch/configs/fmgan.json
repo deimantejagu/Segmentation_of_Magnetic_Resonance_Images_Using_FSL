@@ -1,0 +1,51 @@
+{
+    "exp_name": "fmgan_experiment28",
+    "agent": "FMGAN_Model",
+    "phase": "testing",
+    "load_chkpt": true,
+  
+    "cuda": true,
+    "gpu_device": 0,
+    "seed": 1,
+  
+    "noise_dim": 512,
+  
+    "volume_shape": [240, 240, 48],
+    "patch_shape": [48, 48, 48],
+    "extraction_step": [8, 8 , 8],
+    "relu_slope": 0.2,
+  
+    "batch_size": 16,
+    "num_classes": 4,
+    "num_modalities": 3,
+    "number_images_training": 3,
+    "number_unlab_images_training": 5,
+    "num_images_validating": 2,
+    "num_images_testing": 15,
+    
+    "data_loader_workers": 0,
+    "pin_memory": false,
+    "async_loading": true,
+     
+    "patience": 50,
+    "learning_rate_D": 0.0001,
+    "learning_rate_G": 0.002,
+    "weight_decay": 1e-3,
+    "beta1D": 0.5,
+    "beta1G": 0.5,
+    "beta2D": 0.999,
+    "beta2G": 0.999,
+    "alpha": 0.2,
+      
+    "episodes_per_epoch": 200,
+    "epochs": 300,
+    "validation_every_epoch": 1,
+    "checkpoint_file": "checkpoint_epoch_1.pth.tar",
+    "checkpoint_dir": "experiments/fmgan_experiment28/checkpoints",
+    "output_dir": "experiments/fmgan_experiment28",
+  
+    "data_mode": "imgs",
+    "data_directory": "./data",
+    "summary_dir": "./runs/logs1"
+  }
+
