@@ -10,4 +10,4 @@
 4. Įsitikinkite, kad kodas naudoja GPU.
 
 ## Pastabos
-- Visi eksperimentai yra Google Drive [experiments.zip](https://drive.google.com/file/d/1xVXrD9BC7CGT9BExI_pVsi6OiQ5QTCj7/view?usp=drive_link) kataloge.
+- Visi eksperimentai yra Google Drive [experiments.zip](https://drive.google.com/file/d/1IuClUg1n-zn0WXnPQWlnW39hLKlQde3p/view?usp=drive_link) kataloge.
